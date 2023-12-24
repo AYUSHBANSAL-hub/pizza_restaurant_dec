@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: black !important;
+  color: white !important;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav_link > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#nav_link > ul > li > a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 159px;
+  height: 27px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#nav_social_link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menu_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu_container > h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+.horizontal_line {
+  width: 474px;
+  height: 9px;
+  background: #b62828;
+  margin: 20px;
+}
+
+#menu_container > p {
+  width: 1315px;
+  height: 378px;
+  font-size: 25px;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.25px;
+}
+#menu_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+.menu_item {
+  display: flex;
+  width: 40%;
+  margin-bottom: 61px;
+}
+.menu_item>img{
+    flex: 2;
+    width: 100%;
+    overflow: hidden;
+}
+.menu_item_inFo {
+    flex: 3;
+  margin-left: 20px;
+}
+.menu_item_inFo > h3 {
+  color: #f2c94c;
+  font-size: 28px;
+}
+.menu_item_inFo > p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 40px; /* 200% */
+}
+#hero_section{
+    width: 100vw;
+    height: 1017px;
+    padding-top: 140px;
+    padding-left: 129px;
+}
+
+#my-grid{
+  display: grid;
+  width: 80vw;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: repeat(6, 100px);
+  grid-template-areas: 
+  "a b e"
+  "a b e"
+  "a c e"
+  "a c f"
+  "a d f"
+  "a d f"
+  ;
+}
+
+#img1{
+  grid-area: a;
+  width: 100%;
+  height: 100%;
+}
+#img2{
+  grid-area: b;
+  width: 100%;
+  height: 100%;
+}
+#img3{
+  grid-area: c;
+  width: 100%;
+  height: 100%;
+}
+#img4{
+  grid-area: d;
+  width: 100%;
+  height: 100%;
+}
+#img5{
+  grid-area: e;
+  width: 100%;
+  height: 100%;
+}
+#img6{
+  grid-area: f;
+  width: 100%;
+  height: 100%;
+}
